@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://github.com/UNAIrpgg/ProyectoASIR2-e1.git/edgar_gestion_de_compras_E1/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Compras - ProyectoASIR-e1</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Compras";
+        var mkdocs_page_input_path = "edgar_gestion_de_compras_E1.md";
+        var mkdocs_page_url = "/UNAIrpgg/ProyectoASIR2-e1.git/edgar_gestion_de_compras_E1/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> ProyectoASIR-e1
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cote_PASO1_conf/">Configuracion odoo</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../alvaro_UsuariosDoc/">Usuarios</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../edgar_productos_E1/">Productos</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Compras</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#paso-4-gestion-de-una-compra-pedidos-a-proveedores">🛒 Paso 4: Gestión de una Compra - Pedidos a Proveedores</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-creacion-de-un-pedido-de-compra">📜 4.1 Creación de un Pedido de Compra</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#pasos-para-realizar-una-compra-en-odoo">🔹 Pasos para realizar una compra en Odoo:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#42-validacion-y-recepcion-del-pedido">📦 4.2 Validación y Recepción del Pedido</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#43-facturacion-del-pedido">💰 4.3 Facturación del Pedido</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_1"></a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#conclusion">📌 Conclusión</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#realizado-por-edgar-diaz-martinez">Realizado por Edgar Díaz Martínez</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../unai_ventas/">Ventas</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">ProyectoASIR-e1</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Compras</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="documentacion-odoo-tarea-6">📘 Documentación Odoo - Tarea 6</h1>
+<h2 id="paso-4-gestion-de-una-compra-pedidos-a-proveedores">🛒 Paso 4: Gestión de una Compra - Pedidos a Proveedores</h2>
+<p>Odoo permite gestionar compras y órdenes de compra con proveedores para mantener el inventario abastecido.</p>
+<p><img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/compras.PNG" /></p>
+<h3 id="41-creacion-de-un-pedido-de-compra">📜 <strong>4.1 Creación de un Pedido de Compra</strong></h3>
+<h4 id="pasos-para-realizar-una-compra-en-odoo">🔹 <strong>Pasos para realizar una compra en Odoo:</strong></h4>
+<p><img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/pedidos_compra.PNG" />
+1. Accede al módulo <strong>Compras</strong>.
+2. Selecciona <strong>Pedidos de compra &gt; Crear</strong>.
+<img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/pedido_compra1.PNG" />
+3. Completa los siguientes campos:
+   - <strong>Proveedor</strong>: Selecciona o crea un nuevo proveedor.
+   <img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/pedido_compra2.PNG" />
+   - <strong>Fecha del pedido</strong>.
+   <img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/pedido_compra3.PNG" />
+   - <strong>Productos</strong>: Añade los productos a comprar.
+   <img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/pedido_compra4.PNG" />
+   - <strong>Cantidad y precio unitario</strong>.
+   - <strong>Moneda</strong> (si aplica).
+4. Guarda el pedido.
+<img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/pedido_compra_general.PNG" /></p>
+<hr />
+<h3 id="42-validacion-y-recepcion-del-pedido">📦 <strong>4.2 Validación y Recepción del Pedido</strong></h3>
+<ol>
+<li>En el pedido de compra, haz clic en <strong>Confirmar pedido</strong>.
+<img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/confirmar_pedido.PNG" /></li>
+<li>Odoo generará automáticamente un albarán de recepción en el módulo de <strong>Inventario</strong>.
+<img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/inventario.PNG" /></li>
+<li>Para registrar la llegada de los productos:</li>
+<li>Accede al módulo <strong>Inventario</strong>.</li>
+<li>Ve a <strong>Recepciones &gt; Pedidos pendientes</strong>.
+   <img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/recepciones_pedidos_pendientes.PNG" /></li>
+<li>Confirma la recepción de productos.</li>
+<li>Haz clic en <strong>Validar</strong> para actualizar el stock.
+   <img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/validar.PNG" /></li>
+<li>Validación finalizada
+   <img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/validacion_hecha.PNG" /></li>
+</ol>
+<hr />
+<h3 id="43-facturacion-del-pedido">💰 <strong>4.3 Facturación del Pedido</strong></h3>
+<p>Una vez recibidos los productos, se puede generar la factura para el proveedor.</p>
+<ol>
+<li>Accede al módulo <strong>Compras</strong>.</li>
+<li>Abre el pedido de compra confirmado.</li>
+<li>Haz clic en <strong>Crear factura</strong>.
+<img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/crear_factura.PNG" /></li>
+<li>Revisa los detalles y selecciona el estado:</li>
+<li><strong>Borrador</strong>: Pendiente de validación.
+   <img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/factura_borrador.PNG" /></li>
+<li><strong>Publicada</strong>: Factura lista para pago.
+   <img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/factura_publicada.PNG" /></li>
+<li>Guarda y valida la factura.
+<img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/facturacion_compra.PNG" /></li>
+</ol>
+<h2 id="_1"><img alt="SRI" src="/ProyectoASIR-e1/docs/img-odoo/pagar.PNG" /></h2>
+<h2 id="conclusion">📌 Conclusión</h2>
+<p>Con estos pasos, hemos gestionado la compra a proveedores en Odoo. Esto permite una correcta administración del inventario y optimiza el flujo de stock. 🚀</p>
+<hr />
+<h4 id="realizado-por-edgar-diaz-martinez">Realizado por Edgar Díaz Martínez</h4>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../edgar_productos_E1/" class="btn btn-neutral float-left" title="Productos"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../unai_ventas/" class="btn btn-neutral float-right" title="Ventas">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../edgar_productos_E1/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../unai_ventas/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
